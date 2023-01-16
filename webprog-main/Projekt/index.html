@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Érdeklődési köröm</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="styles.css">
+<style>
+    
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+</head>
+<body>
+
+<!-- rejtett menu -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Menü bezárása</a>
+  <a href="#kepek" onclick="w3_close()" class="w3-bar-item w3-button">Képek</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Andrew Tate</a>
+</nav>
+
+<!-- menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-button w3-padding-16 w3-right" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Regisztráció</div>
+  </div>
+  <div class="w3-center w3-white w3-padding-16 w3-xlarge">Érdeklődési köröm</div>
+</div>
+</div>
+<!-- regisztracio -->>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Regisztráció</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Email" name="email" required>
+
+      <label for="psw"><b>Jelszó</b></label>
+      <input type="password" placeholder="Jelszó" name="psw" required>
+
+      <label for="psw-repeat"><b>Jelszó újra</b></label>
+      <input type="password" placeholder="Jelszó újra" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Emlékezz rám
+      </label>
+
+      <p>A fiók létrehozásával elfogadod a felhasználói feltételeket és az adatvédelmet. <a href="#" style="color:dodgerblue">Feltételek & Adatvédelem</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Mégsem</button>
+        <button type="submit" class="signupbtn">Regisztráció</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+  
+
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- 1. sor kepek-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img class="top" src="img/topg.jpg" alt="TopG" style="width:100%">
+      <h3>Top G</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/penz.jpg" alt="Pénz" style="width:100%">
+      <h3>Pénz</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/auto.jpg" alt="Autó" style="width:100%">
+      <h3>Szuperautók</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/szivar.jpg" alt="Szivar" style="width:100%">
+      <h3>Dohányzás</h3>
+    </div>
+  </div>
+  
+  <!-- 2. sor kepek-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img class="top" src="img/workout.jpg" alt="Edzés" style="width:100%">
+      <h3>Edzés</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/girls.jpg" alt="Lanyok" style="width:100%">
+      <h3>Nők</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/jet.jpg" alt="Repulo" style="width:100%">
+      <h3>Privát repülő</h3>
+    </div>
+    <div class="w3-quarter">
+      <img class="top" src="img/gun.jpg" alt="Fegyo" style="width:100%">
+      <h3>Fegyverek</h3>
+    </div>
+  </div>
+
+
+  
+  <hr id="about">
+
+  <!-- egyeb fos -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>ÉLD MEG, AMIT ÁLMODSZ</h3><br>
+    <img src="img/tate.jpg" alt="Andrew Tate" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>Andrew Tate</b></h4>
+      <h6><i>Erőfeszítéseket kell tenned, hogy elérd azt az életet, amelyet szeretnél.</i></h6>
+      <p>Andrew Tate amerikai-brit internetes személyiség, korábbi profi kick-boxoló. Kick-boxolói karrierjét követően Tate fizetős tanfolyamokat és tagságokat kezdett el kínálni a weboldalán keresztül, később pedig online influenszerként vált híressé. Tate nő- és fajgyűlölő megszólalásai a közösségi médiában több platformról való kitiltását eredményezték. Tate-et, testvérét és két nőt 2022. december 29-én 30 napra őrizetbe vett a román DIICOT emberkereskedelem, szexuális kizsákmányolás és a webkamera stúdiójával kapcsolatos szervezett bűnözői egység létrehozásának vádjával.A román rendőrség azt állítja, hogy a csoport arra kényszerítette az áldozatokat, hogy fizetett pornográfiát készítsenek weboldalukra. 2022. december 30-án egy bíró elrendelte, hogy 30 napra előzetes letartóztatásba helyezzék, amíg a nyomozás folytatódik.</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- labjegyzet -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>EGYÉB INFÓ</h3>
+      <p><a href="https://hu.wikipedia.org/wiki/Andrew_Tate"></a>Andrew Tate - Wikipédia</p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>KAPCSOLÓDÓ BLOGOK</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="img/tristan.jfif" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Tristan Tate</span><br>
+          <span></span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>KAPCSOLÓDÓ TAGEK</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">#andrewtate</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#cobratate</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#hustleruniversity</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#datingtips</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#datingapp</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#dates</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#onlinedating</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#topg</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#redpill</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#hustlersuniversity</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#tateism</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#motivation</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#tristantate</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">#successmindset</span>
+      </p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+// rejtett menu script
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// modal
+var modal = document.getElementById('id01');
+
+// barhova kattintasz kilep a regisztraciobol
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
